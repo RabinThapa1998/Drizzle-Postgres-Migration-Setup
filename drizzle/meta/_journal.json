@@ -15,6 +15,13 @@
       "when": 1716960764064,
       "tag": "0001_salty_maddog",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1716961704597,
+      "tag": "0002_overconfident_otto_octavius",
+      "breakpoints": true
     }
   ]
 }
