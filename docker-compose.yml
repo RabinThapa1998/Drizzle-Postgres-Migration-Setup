@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+    postgres:
+        image: postgres:14-alpine
+        ports:
+            - 5400:5432
+        volumes:
+            - postgres:/var/lib/postgresql/data
+        environment:
+            - POSTGRES_PASSWORD=root
+            - POSTGRES_DB=drizzle
+
+volumes:
+    postgres:

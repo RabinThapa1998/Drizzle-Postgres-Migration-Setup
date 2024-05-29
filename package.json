@@ -1,0 +1,30 @@
+{
+    "name": "drizzle-prc",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "dev": "node --env-file=.env --watch-path=./src -r ts-node/register src/index.ts",
+        "start": "node --env-file=.env dist/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "migration:generate": "drizzle-kit generate",
+        "migration:run": "drizzle-kit migrate"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/express": "^4.17.21",
+        "@types/node": "^20.12.12",
+        "@types/pg": "^8.11.6",
+        "drizzle-kit": "^0.21.4",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.4.5"
+    },
+    "dependencies": {
+        "drizzle-orm": "^0.30.10",
+        "express": "^4.19.2",
+        "pg": "^8.11.5"
+    }
+}
